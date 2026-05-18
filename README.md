@@ -219,6 +219,18 @@ python run_demo.py --data dataset.csv --model EleutherAI/gpt-neo-125M --patients
 - [ ] Causal inference for recommendations
 - [ ] Uncertainty quantification
 
+## 🚀 Live Demo
+
+Experience the deployed AI healthcare system here:
+
+👉 **Streamlit App:**  
+https://multi-agent-health-ai-kaswthsappjmktcegkqnvt4.streamlit.app/
+
+Features:
+- Real-time patient monitoring
+- AI agent analysis
+- Risk prediction dashboard
+
 ## License & Attribution
 
 Educational use only. For medical applications, consult healthcare professionals.
