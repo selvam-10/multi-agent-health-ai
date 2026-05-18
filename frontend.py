@@ -12,7 +12,7 @@ import plotly.graph_objects as go
 from datetime import datetime
 import time
 from data import load_data, get_patient_groups
-from multi_agent.agents import (
+from agents import (
     MonitoringAgent,
     AnalysisAgent,
     AnomalyDetectionAgent,
