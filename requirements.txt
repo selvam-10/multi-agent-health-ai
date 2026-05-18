@@ -1,0 +1,5 @@
+pandas
+transformers>=4.0.0
+torch
+streamlit>=1.28.0
+plotly>=5.0.0
