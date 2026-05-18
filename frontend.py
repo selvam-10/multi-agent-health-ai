@@ -107,14 +107,16 @@ def get_severity_color(severity):
 
 @st.cache_resource
 def load_ml_model():
-    """Load the trained ML model and scaler."""
-    try:
-        model = joblib.load("model.joblib")
-        scaler = joblib.load("scaler.joblib")
-        feature_names = joblib.load("feature_names.joblib")
-        return model, scaler, feature_names
-    except FileNotFoundError:
-        return None, None, None
+    import os
+    import joblib
+
+    base_dir = os.path.dirname(__file__)
+
+    model = joblib.load(os.path.join(base_dir, "model.joblib"))
+    scaler = joblib.load(os.path.join(base_dir, "scaler.joblib"))
+    feature_names = joblib.load(os.path.join(base_dir, "feature_names.joblib"))
+
+    return model, scaler, feature_names
 
 
 def generate_random_patient_data(num_samples: int = 1, feature_names: list = None):
